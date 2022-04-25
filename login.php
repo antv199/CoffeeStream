@@ -1,16 +1,15 @@
 <?php 
-include_once 'header.html';
-include_once 'footer.html';?>
+include_once 'header.html';?>
 
 <div style="padding: 410px; padding-top: 100px; top-50 start-50">
 	<form>
 		<div class="row align-items-center g-3">
 			<div class="form-floating col-auto" >
-				<input type="email" class="form-control" id="InputEmail">
+				<input type="email" class="form-control" id="InputEmail" required>
 				<label for="InputEmail">Email address</label>
 			</div>
 			<div class="form-floating col-auto">
-				<input type="password" class="form-control" id="InputPassword">
+				<input type="password" class="form-control" id="InputPassword" required>
 				<label for="InputPassword">Password</label>
 			</div>
 		</div>
