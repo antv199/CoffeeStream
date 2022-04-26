@@ -1,8 +1,17 @@
+<title>About</title>
 <?php 
-include_once 'header.html';
-include_once 'footer.html';?>
+include_once 'header.php';
+include_once 'footer.php';?>
 
 <body>
+	<style>
+		body{
+			background-image: url('./img/coffeelaptop.webp');
+			background-position: center;
+			background-size: cover;
+			color: white;
+		}
+	</style>
 	<div style="padding: 40px; padding-top: 50px;">
 		<center>
 			<h1>Welcome to the world where streaming is not a pain!</h1><br><br>

@@ -6,12 +6,13 @@
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
 
-    <a class="navbar-brand" href="./">Coffee</a>
+    <a class="navbar-brand" href="./">CoffeeStream</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,10 +20,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="./page1.php">Page 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./page1.php">Page 1</a>
+          <a class="nav-link" href="./whycoffeestream.php">Why CoffeeStream?</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./pricing.php">Pricing</a>
