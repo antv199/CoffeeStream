@@ -9,7 +9,7 @@ include_once 'footer.php';?>
 			background-image: url('./img/coffeelaptop.webp');
 			background-position: center;
 			background-size: cover;
-			color: white;
+			color: red;
 		}
 	</style>
 	<div style="padding: 40px; padding-top: 50px;">
@@ -26,8 +26,8 @@ include_once 'footer.php';?>
 		<br><br><br><br><br><br><br><br><br>
 
 		<i>
-		<span class="align-bottom">*Depends on the service itself.</span><br>
-		<span class="align-bottom">*<sup>1</sup>Depends on the service itself.</span><br>
-		</i>
+		<span class="align-bottom">*Depends on the service and its availability.</span><br>
+		<span class="align-bottom">*<sup>1</sup>Depends on the service itself.</span>
+		</i><br><br><br><br><br>
 	</div>
 </body>

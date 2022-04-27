@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <script src="./js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -24,13 +25,21 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./pricing.php">Pricing</a>
-        </li>  
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./features.php">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./blog.php">Blog</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Account</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./login.php">Log In</a></li>
-						<li><a class="dropdown-item" href="./signup.php">Sign Up</a></li>
-          </ul>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="./login.php">Log In</a></li>
+              <li><a class="dropdown-item" href="./signup.php">Sign Up</a></li>
+            </ul>
         </li>
       </ul>
     </div>

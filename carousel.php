@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
 </head>
 
 <body>
 <style>
 	#carouselExampleIndicators{
-		width: 50%;
-		height: 50%;
+		margin-top: 40px;
+		width: 70%;
+		height: 15%;
 	}
 
 	#CarouselText{
@@ -31,22 +30,23 @@
 			<div class="carousel-item active card">
 				<div class="card-img-overlay">
 					<h2 id="CarouselText">House on Haunted Hill (1959)</h2>
+					<p class="UnderText" id="CarouselText"> Only on CoffeStream</p>
 				</div>
-				<img src="./img/promo/HouseOnHauntedHill.jpg" class="d-block w-100" style="height: 578px">
+				<img src="./img/promo/HouseOnHauntedHill.jpg" class="d-block w-100" style="width:50%; height: 578px;">
 			</div>
 
 			<div class="carousel-item">
 			<div class="card-img-overlay">
 				<h2 id="CarouselText">Night of the Living Dead (1968)</h2>
 			</div>
-				<img src="./img/promo/NightOfTheLivingDead.jpg" class="d-block w-100" style="height: 578px">
+				<img src="./img/promo/NightOfTheLivingDead.jpg" class="d-block w-100" style="width:50%; height: 578px;">
 			</div>
 
 			<div class="carousel-item">
 			<div class="card-img-overlay">
 				<h2 id="CarouselText">The Little Shop of Horrors (1960)</h2>
 			</div>
-				<img src="./img/promo/TheLittleShopofHorrors.jpg" class="d-block w-100" style="height: 578px">
+				<img src="./img/promo/TheLittleShopofHorrors.jpg" class="d-block w-100" style="width:50%; height: 578px;">
 			</div>
 
 		</div>

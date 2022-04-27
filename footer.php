@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
-
+<footer>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
   <ul class="navbar-nav">
     <li class="nav-item">
@@ -13,5 +12,5 @@
     </li>
   </ul>
 </nav>
-</body>
+</footer>
 </html>

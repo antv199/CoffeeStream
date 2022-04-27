@@ -41,6 +41,11 @@ include_once 'footer.php';?>
 				<td>No</td>
 				<td>Yes</td>
 			</tr>
+			<tr>
+				<th scope="row">Price</th>
+				<td>0$</td>
+				<td>0$</td>
+			</tr>
 		</tbody>
 	</table>
 	</div>
