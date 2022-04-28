@@ -32,6 +32,18 @@ include_once 'header.php';?>
 				</div>
 			</div>
 		</div>
+
+		
+		<div style="margin: 10px;">
+			<div class="card border-info mb-3" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">SirRecommends<sup>TM</sup></h5>
+					<p class="card-text">
+						No idea what to watch next? No problem! We will recommend you a list of movies/serieses/content based on your preferences.
+					</p>
+				</div>
+			</div>
+		</div>
 	</center>
 
 <br><br><br><br><br><br>

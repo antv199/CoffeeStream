@@ -30,7 +30,6 @@
 			<div class="carousel-item active card">
 				<div class="card-img-overlay">
 					<h2 id="CarouselText">House on Haunted Hill (1959)</h2>
-					<p class="UnderText" id="CarouselText"> Only on CoffeStream</p>
 				</div>
 				<img src="./img/promo/HouseOnHauntedHill.jpg" class="d-block w-100" style="width:50%; height: 578px;">
 			</div>

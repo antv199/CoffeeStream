@@ -37,7 +37,7 @@ include_once 'footer.php';?>
 				<td>Yes</td>
 			</tr>
 			<tr>
-				<th scope="row">Recommendations based on what you watch<br><sub><i>Powered by AI</i></sub></th>
+				<th scope="row">SirRecommends<sup>TM</sup></th>
 				<td>No</td>
 				<td>Yes</td>
 			</tr>

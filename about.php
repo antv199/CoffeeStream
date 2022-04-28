@@ -22,12 +22,14 @@ include_once 'footer.php';?>
 			Is your favorite movie or series not available? No problem! We keep track of the availability in various services in our database and now you only have to choose your favourite service and binge <b>effortlessly!*</b><br><br>
 			<b>Are you a content creator/publisher?</b> <a href="./signup.php">Sign up</a> here to gain access to our content creation platform.
 			</h5>
-		</center>
+			<br><br><br><br>
+
+			<a href="./demo.php" class="btn btn-info">Live Demo</a>
+		</center><br><br>
 		<br><br><br><br><br><br><br><br><br>
 
 		<i>
 		<span class="align-bottom">*Depends on the service and its availability.</span><br>
-		<span class="align-bottom">*<sup>1</sup>Depends on the service itself.</span>
 		</i><br><br><br><br><br>
 	</div>
 </body>
