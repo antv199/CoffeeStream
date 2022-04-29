@@ -11,6 +11,11 @@
         <a class="nav-link" href="./contactus.php">Contact Us</a>
       </li>
     </ul>
+    <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="./onlyducks.php">Follow us on OnlyDucks</a>
+      </li>
+    </ul>
   </nav>
 </footer>
 
