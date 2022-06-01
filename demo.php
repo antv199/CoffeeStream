@@ -1,6 +1,20 @@
 <?php 
 include_once 'header.php';
-include_once 'footer.php';?>
+include_once 'footer.php';
+
+$conn = mysqli_connect('localhost', 'root', '', 'site');
+
+if(!$conn){
+		echo 'Connection error: ' . mysqli_connect_error();
+}
+else{
+	$count=mysqli_num_rows(mysqli_query($conn, "SELECT * FROM movies"));
+	$rng = rand(1, $count);
+	$sql="SELECT * FROM movies WHERE id=".$rng."";
+	$result=mysqli_query($conn, $sql);
+	$getStuff=mysqli_fetch_assoc($result);
+}
+?>
 
 <style>
 	.card{
@@ -17,28 +31,56 @@ include_once 'footer.php';?>
 	<center>
 
 		<div class="card" style="width: 50rem;">
-			<center><img src="./img/promo/HouseOnHauntedHill.jpg" class="card-img-top" style="width:50%; height:50%"></center>
+			<?php
+				echo '<center><img src="./img/promo/'.$getStuff['picture'].'" class="card-img-top" style="width:50%; height:50%"></center>';
+			?>
+			
 			<div class="card-body">
-				<h5 class="card-title">House on Haunted Hill (1959)</h5>
+				<h5 class="card-title"><?php echo "".$getStuff['name']." (".$getStuff['year'].")";?></h5>
 				<p class="card-text">The movie is available within the following services:</p>
-				<a href="https://www.youtube.com/watch?v=IBFRRZ6TsPk" class="btn btn-danger">
-					<img src="https://icongr.am/simple/youtube.svg?size=26&color=ffffff&colored=false">
+
+				<?php
+				if($getStuff['amazon']){
+					echo '
+					<a href="https://www.amazon.com/gp/video/detail/'.$getStuff["amazon"].'" class="btn btn-warning">
+					<img src="https://icongr.am/simple/primevideo.svg?size=23&color=ffffff&colored=false">
+						Amazon Prime
+					</a>';
+				}
+
+				if($getStuff['apple']){
+					echo '
+					<a href="https://tv.apple.com/movie/'.$getStuff["apple"].'" class="btn btn-dark">
+					<img src=https://icongr.am/simple/appletv.svg?size=23&color=ffffff&colored=true">
+						Apple TV
+					</a>';
+				}
+
+				if($getStuff['hulu']){
+					echo '
+					<a href="https://www.hulu.com/movie/'.$getStuff["hulu"].'" class="btn btn-success">
+					<img src="https://icongr.am/simple/hulu.svg?size=23&color=ffffff&colored=false">
+						Hulu
+					</a>';
+				}
+				
+				if($getStuff['netflix']){
+					echo '
+					<a href="https://www.netflix.com/title/'.$getStuff["netflix"].'" class="btn btn-danger">
+					<img src="https://icongr.am/simple/netflix.svg?size=23&color=ffffff&colored=false">
+						Netflix
+					</a>';
+				}
+				
+				if($getStuff['youtube']){
+					echo '
+					<a href="https://www.youtube.com/watch?v='.$getStuff["youtube"].'" class="btn btn-danger">
+					<img src="https://icongr.am/simple/youtube.svg?size=23&color=ffffff&colored=false">
 						YouTube
-				</a>
-				<a href="https://www.netflix.com/title/605556" class="btn btn-danger">
-				<img src="https://icongr.am/simple/netflix.svg?size=26&color=ffffff&colored=false">
-					Netflix
-				</a>
-
-				<a href="https://www.amazon.com/House-Haunted-Hill-Vincent-Price/dp/B000SW16BC" class="btn btn-warning">
-				<img src="https://icongr.am/simple/primevideo.svg?size=29&color=ffffff&colored=false">
-					Amazon Prime Video
-				</a>
-				<a href="https://tv.apple.com/movie/umc.cmc.2otxctozjojdibqsuss1f0mnp" class="btn btn-dark">
-				<img src="https://icongr.am/simple/appletv.svg?size=29&color=ffffff&colored=false">
-					Apple TV
-
-				</a>
+					</a>';
+				}
+				
+				?>
 
 			</div>
 		</div>

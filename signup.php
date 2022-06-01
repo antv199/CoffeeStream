@@ -21,6 +21,10 @@ include_once 'header.php';?>
 			<br><br>
 
 			<!-- Content Creator/Publisher Stuff-->
+			<div class="mb-3" >
+				<label for="InputCountry" class="form-label">Country</label>
+				<input type="email" class="form-control" id="InputCountry" required>
+			</div><br>
 			<div class="mb-3 form-check">
 				<input type="checkbox" class="form-check-input" id="ContentPubCheck">
 				<label class="form-check-label" for="Check">Are you a content creator/publisher?</label>
@@ -33,10 +37,6 @@ include_once 'header.php';?>
 				<label for="InputAddress" class="form-label">Street Address</label>
 				<input type="email" class="form-control" id="InputAddress">
 			</div>
-			<div class="mb-3" >
-				<label for="InputCountry" class="form-label">Country</label>
-				<input type="email" class="form-control" id="InputCountry">
-			</div><br>
 
 			<div class="mb-3 form-check">
 				<input type="checkbox" class="form-check-input" id="TOSCheck" required>
