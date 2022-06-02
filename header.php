@@ -38,6 +38,7 @@
               <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
                 <li><a class="dropdown-item" href="./login.php">Log In</a></li>
                 <li><a class="dropdown-item" href="./signup.php">Sign Up</a></li>
+                <li><a class="dropdown-item" href="./webadmin.php">WebAdmin</a></li>
               </ul>
           </li>
         </ul>

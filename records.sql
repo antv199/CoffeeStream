@@ -2,27 +2,29 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-CREATE TABLE `records` (
+CREATE TABLE `susers` (
   `id` int(3) NOT NULL,
   `email` varchar(30) NOT NULL,
   `password` varchar(30) NOT NULL,
   `country` varchar(30) NOT NULL,
-  `iscontentpub` bit(0) NOT NULL,
+  `iscontentpub` tinyint(0) NOT NULL DEFAULT '0',
+  `isadmin` tinyint(0) NOT NULL DEFAULT '0',
   `crpubname` varchar(50),
   `streetaddress` text(200)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
-INSERT INTO `records` (`id`, `email`, `password`, `country`, `iscontentpub`, `crpubname` , `streetaddress`) VALUES
-(1, 'vasilis1rewr@gmail.com', 'fdsfdsf1w54rtw', 'Greece', '0', '', ''),
-(2, 'test@test.com', 'fdsfdssdffsf1w54rtw', 'USA', '1', 'Test Enteprises', 'Test 123 TestStreet'),
-(3, 'mike1234156@outlook.com', 'fdf1s56trw32++', 'UK', '0', '', '');
+INSERT INTO `susers` (`id`, `email`, `password`, `country`, `iscontentpub`, `isadmin`, `crpubname` , `streetaddress`) VALUES
+(1, 'vasilis1rewr@gmail.com', 'fdsfdsf1w54rtw', 'Greece', '0', '0', '', ''),
+(2, 'test@test.com', 'fdsfdssdffsf1w54rtw', 'USA', '1', '1', 'Test Enteprises', 'Test 123 TestStreet'),
+(3, 'mike1234156@outlook.com', 'fdf1s56trw32++', 'UK', '0', '0', '', ''),
+(4, 'vaschar@outlook.com', 'q9f15wer949we', 'Greece', '0', '0', '', ''),
+(5, 'kostsakkas@uoi.gr', 'easwrf96+are4', 'Greece', '0', '0', '', ''),
+(6, 'annmgianni@gmail.com', 'tydruj6+44g5er+a', '0', '0', '', '');
 
 
-ALTER TABLE `records`
+ALTER TABLE `susers`
   ADD PRIMARY KEY (`id`);
-
-ALTER TABLE `records`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
@@ -47,13 +49,5 @@ INSERT INTO `movies` (`id`, `year`, `name`, `picture`, `amazon`, `apple`, `youtu
 
 ALTER TABLE `movies`
   ADD PRIMARY KEY (`id`);
-
-ALTER TABLE `movies`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
-
-CREATE USER 'viewer'@'%';
-REVOKE ALL PRIVILEGES ON *.* FROM 'viewer'@'%';
-REVOKE GRANT OPTION ON *.* FROM 'viewer'@'%';
-GRANT SELECT ON site.movies TO viewer@'%' IDENTIFIED BY 'viewer';
-FLUSH PRIVILEGES;
