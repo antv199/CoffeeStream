@@ -45,15 +45,16 @@
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
               <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
-                
-                <li>
                   <?php
-                  if($loggedIN==TRUE){echo'<a class="dropdown-item" href="./logout.php">Log Out</a>';}
-                  else{echo'<a class="dropdown-item" href="./login.php">Log In</a>';}
+                  if($loggedIN==TRUE){
+                    echo'<li><a class="dropdown-item" href="./logout.php">Log Out</a></li>';
+                    echo'<li><a class="dropdown-item" href="./webadmin.php">WebAdmin</a></li>';
+                  }
+                  else{
+                    echo'<li><a class="dropdown-item" href="./login.php">Log In</a></li>';
+                    echo'<li><a class="dropdown-item" href="./signup.php">Sign Up</a></li>';
+                  }
                   ?>
-                </li>
-                <li><a class="dropdown-item" href="./signup.php">Sign Up</a></li>
-                <li><a class="dropdown-item" href="./webadmin.php">WebAdmin</a></li>
               </ul>
           </li>
         </ul>

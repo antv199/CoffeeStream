@@ -1,12 +1,9 @@
 <?php 
 include_once 'header.php';
 
-
+$loggedIN=FALSE;
 if(isset($_COOKIE['userLoggedIn']) and $_COOKIE['userLoggedIn']==TRUE){
 	$loggedIN=TRUE;
-}
-else{
-	$loggedIN=FALSE;
 }
 ?>
 
