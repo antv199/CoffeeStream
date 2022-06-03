@@ -1,5 +1,13 @@
 <?php 
 include_once 'header.php';
+
+
+if(isset($_COOKIE['userLoggedIn']) and $_COOKIE['userLoggedIn']==TRUE){
+	$loggedIN=TRUE;
+}
+else{
+	$loggedIN=FALSE;
+}
 ?>
 
 <title>Log In</title>
@@ -27,11 +35,11 @@ include_once 'header.php';
 		<form method="post" action="logincheck.php" id="loginform">
 			<div class="row align-items-center g-3">
 				<div class="form-floating col-auto" >
-					<input type="email" class="form-control" name="InputEmail" id="InputEmail" required>
+					<input type="email" class="form-control" name="InputEmail" id="InputEmail" <?php if($loggedIN==TRUE){echo 'disabled';} ?> required>
 					<label for="InputEmail">Email address</label>
 				</div>
 				<div class="form-floating col-auto">
-					<input type="password" class="form-control" name="InputPassword" id="InputPassword" required>
+					<input type="password" class="form-control" name="InputPassword" id="InputPassword" <?php if($loggedIN==TRUE){echo 'disabled';}?> required>
 					<label for="InputPassword">Password</label>
 				</div>
 			</div>
@@ -41,7 +49,7 @@ include_once 'header.php';
 			<input type="checkbox" class="form-check-input" id="Check">
 			<label class="form-check-label" for="Check">Remember me</label>
 		</div>
-			<button type="submit" value="login" name="login" class="btn btn-primary">Log In</button>
+			<button type="submit" value="login" name="login" class="btn btn-primary" <?php if($loggedIN==TRUE){echo 'disabled';}?> >Log In</button>
 		</form>
 	</div>
 </body>

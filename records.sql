@@ -20,11 +20,12 @@ INSERT INTO `susers` (`id`, `email`, `password`, `country`, `iscontentpub`, `isa
 (3, 'mike1234156@outlook.com', 'fdf1s56trw32++', 'UK', '0', '0', '', ''),
 (4, 'vaschar@outlook.com', 'q9f15wer949we', 'Greece', '0', '0', '', ''),
 (5, 'kostsakkas@uoi.gr', 'easwrf96+are4', 'Greece', '0', '0', '', ''),
-(6, 'annmgianni@gmail.com', 'tydruj6+44g5er+a', '0', '0', '', '');
+(6, 'annmgianni@gmail.com', 'tydruj6+44g5er+a', 'Greece', '0', '0', '', '');
 
 
 ALTER TABLE `susers`
   ADD PRIMARY KEY (`id`);
+ALTER TABLE `susers`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
@@ -42,12 +43,13 @@ CREATE TABLE `movies` (
 
 
 INSERT INTO `movies` (`id`, `year`, `name`, `picture`, `amazon`, `apple`, `youtube`, `netflix` , `hulu`) VALUES
-(1, '1959', 'House on Haunted Hill', 'HouseOnHauntedHill.jpg', 'B000SW16BC', 'umc.cmc.2otxctozjojdibqsuss1f0mnp', 'IBFRRZ6TsPk', '605556', '')
-(2, '1968', 'Night of the Living Dead', 'NightOfTheLivingDead.jpg', 'B018TGL4ZG', 'umc.cmc.5yxg24w94798nq94xsgd2hisv', '', '17017662', 'night-of-the-living-dead-68856533-1d59-495b-9590-e190890b70db')
+(1, '1959', 'House on Haunted Hill', 'HouseOnHauntedHill.jpg', 'B000SW16BC', 'umc.cmc.2otxctozjojdibqsuss1f0mnp', 'IBFRRZ6TsPk', '605556', ''),
+(2, '1968', 'Night of the Living Dead', 'NightOfTheLivingDead.jpg', 'B018TGL4ZG', 'umc.cmc.5yxg24w94798nq94xsgd2hisv', '', '17017662', 'night-of-the-living-dead-68856533-1d59-495b-9590-e190890b70db'),
 (3, '1986', 'Little Shop of Horrors', 'TheLittleShopofHorrors.jpg', '0KEKSTWCRTMA771TTUKVZ4OZ1L', 'umc.cmc.7m7ls4ignhj9qzaxl48427v9', 'MjGpxDVloDk', '60001313', '');
 
 
 ALTER TABLE `movies`
   ADD PRIMARY KEY (`id`);
+ALTER TABLE `movies`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
