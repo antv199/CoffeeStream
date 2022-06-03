@@ -29,6 +29,31 @@ ALTER TABLE `susers`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
+CREATE TABLE `emptyNUsellessTable` (
+  `id` int(3) NOT NULL,
+  `Seriously` varchar(30) NOT NULL,
+  `This` varchar(30) NOT NULL,
+  `Table` varchar(30) NOT NULL,
+  `is` tinyint(0) NOT NULL DEFAULT '0',
+  `USELESS` varchar(50)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+INSERT INTO `emptyNUsellessTable` (`id`, `Seriously`, `This`, `Table`, `is`, `USELESS`) VALUES
+(1, 'vasilis1rewr@gmail.com', 'fdsfdsf1w54rtw', 'Greece', '0', ''),
+(2, 'test@test.com', 'fdsfdssdffsf1w54rtw', 'USA', '1', '1', 'Test Enteprises'),
+(3, 'mike1234156@outlook.com', 'fdf1s56trw32++', 'UK', '0', ''),
+(4, 'vaschar@outlook.com', 'q9f15wer949we', 'Greece', '0', ''),
+(5, 'kostsakkas@uoi.gr', 'easwrf96+are4', 'Greece', '0', ''),
+(6, 'annmgianni@gmail.com', 'tydruj6+44g5er+a', 'Greece', '0', '');
+
+
+ALTER TABLE `emptyNUsellessTable`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `emptyNUsellessTable`
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+COMMIT;
+
 CREATE TABLE `movies` (
   `id` SMALLINT(255) NOT NULL,
   `year` SMALLINT(255) NOT NULL,
